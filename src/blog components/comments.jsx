@@ -1,6 +1,6 @@
 import '../App.css';
 import React, { useState, useRef, useEffect } from 'react';
-import Onecomment from './onecomment';
+import Onecomment from './Onecomment';
 
 function comments() {
   const [comment, setComment] = useState({
