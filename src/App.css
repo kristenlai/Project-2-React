@@ -43,6 +43,14 @@ a {
 .App-body {
   flex: 1;
   color: #523673;
+  margin: 1rem;
+}
+
+.Home {
+  flex: 1;
+  color: #523673;
+  margin: 1rem;
+  text-align: center;
 }
 
 .post {
@@ -52,7 +60,7 @@ a {
   box-shadow:0 5px 10px 0 rgba(17, 12, 46, 0.8);
   padding: 1rem;
   position: relative;
-  margin: 3rem;
+  margin: 2rem;
 }
 
 .post li {
@@ -63,14 +71,21 @@ a {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-bottom: 1rem;
+}
+
+.form button {
+  background-color: #7f649d;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .postList {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin: 1rem;
 }
 
 .App-footer {

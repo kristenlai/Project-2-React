@@ -2,14 +2,15 @@ import React from 'react'
 import '../../App.css';
 import Header from '../header';
 
-function aboutpage() {
+function homepage() {
   return (
     <div className='App'>
         <header className="App-header">
             <Header />
         </header>
-        <div className='App-body'>
-          <p>This is the about page. </p>
+        <div className='Home'>
+          <h1>Welcome to My Blog!</h1>
+          <h3>Head over to the login page to get started.</h3>
         </div>
         <footer className="App-footer">
         <p>© 2026 My Blog</p>
@@ -18,4 +19,4 @@ function aboutpage() {
   )
 }
 
-export default aboutpage;
+export default homepage;

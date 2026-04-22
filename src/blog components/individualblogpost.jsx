@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './header'
 import Comments from './comments';
 import Info from './info';
+import '../App.css';
 import { useEffect,useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router';

@@ -5,14 +5,16 @@ import Header from '../header';
 
 function postlist() {
   return (
-    <div>
+    <div className='App'>
         <header className="App-header">
             <Header />
         </header>
-        <div className='postList'>
-          <Link to="/posts/1">Post 1</Link>
-          <Link to="/posts/2">Post 2</Link>
-          <Link to="/posts/3">Post 3</Link>
+        <div className='App-body'>
+          <div className='postList'>
+            <Link to="/posts/1">Post 1</Link>
+            <Link to="/posts/2">Post 2</Link>
+            <Link to="/posts/3">Post 3</Link>
+          </div>
         </div>
         <footer className="App-footer">
         <p>© 2026 My Blog</p>
