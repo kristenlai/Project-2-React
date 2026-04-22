@@ -22,9 +22,11 @@ function header() {
                     <li>
                         <Link to="/posts">Posts</Link>
                     </li>
+                    <li>
+                        {/* <Link to="/login">Login</Link> */}
+                        {username ? <p onClick={logout}>Logout</p> : <Link to="/login">Login</Link>}
+                    </li>
                 </ul>
-                {/* <Link to="/login">Login</Link> */}
-                {username ? <p onClick={logout}>Hi {username}, Logout</p> : <Link to="/login">Login</Link>}
             </nav>
         </div>
     )

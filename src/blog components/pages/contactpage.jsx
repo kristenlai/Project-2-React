@@ -9,7 +9,23 @@ function contactpage() {
             <Header />
         </header>
         <div className='App-body'>
-          <p>This is the contact page. </p>
+          <h2>Contact Page</h2>
+          <form className="form">
+            <input 
+            placeholder="Name"
+            ></input>
+            <input 
+            placeholder="Email"
+            type="email"
+            ></input>
+            <textarea 
+            cols="50" rows="3" 
+            placeholder="Message"
+            ></textarea>
+            <button 
+            type="submit"
+            >Submit</button>
+          </form>
         </div>
         <footer className="App-footer">
         <p>© 2026 My Blog</p>

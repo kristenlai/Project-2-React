@@ -28,5 +28,5 @@ function App() {
 export default App; 
 
 // git add .
-// git commit -m "lab7 complete"
+// git commit -m "first commit"
 // git push origin main
