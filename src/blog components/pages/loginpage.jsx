@@ -3,9 +3,11 @@ import '../../App.css';
 import Header from '../header';
 import { useState } from 'react';
 import { useAuth } from '../authorize/AuthContext';
+import { useNavigate } from 'react-router';
 
 function loginpage() {
     const {login} = useAuth();
+    const navigate = useNavigate();
     const [userData, setUserData]= useState({
         username: "",
         password: ""
@@ -14,6 +16,7 @@ function loginpage() {
         e.preventDefault();
         //console.log(userData);
         login(userData.username);
+        navigate("/posts");
     };
     
     return (
@@ -33,7 +36,7 @@ function loginpage() {
                 type='password'
                 value={userData.password} 
                 onChange={(e) => setUserData({...userData, password: e.target.value})} />
-                <button type='submit' onClick={ console.log("Hello!") }>Submit</button>
+                <button type='submit'>Submit</button>
             </form>
           </div>
         </div>
