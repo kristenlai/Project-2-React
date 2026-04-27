@@ -2,6 +2,7 @@ import '../App.css';
 import React, { useState, useRef, useEffect } from 'react';
 import Onecomment from './Onecomment';
 import { useAuth } from './authorize/AuthContext';
+import { Link } from 'react-router';
 
 function comments() {
   const {user} = useAuth();
@@ -23,13 +24,16 @@ function comments() {
     textBoxRef.current.focus();
   };
   useEffect(() => {
-    focusOnCommentBox();
+    if (textBoxRef.current) {
+      focusOnCommentBox();
+    }
   }, []);
 
 
   return (
       <div>
         <h2>Comments</h2>
+        { user ? (
         <form className="form" onSubmit={addComment}>
           <input 
           value={comment.name}
@@ -48,6 +52,9 @@ function comments() {
           type="submit"
           >Submit</button>
         </form>
+        ) : (
+          <p className='commentbutton'>Please <Link to="/login"><button>Login</button></Link> to make a comment!</p>
+        )}
         <h3>Existing Comments:</h3>
         <ul>
           {commentList.map((value, index) => (

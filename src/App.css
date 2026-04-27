@@ -91,6 +91,15 @@ a {
   border-radius: 5px;
 }
 
+.commentbutton button{
+  background-color: #7f649d;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 .postList {
   display: flex;
   flex-direction: column;
