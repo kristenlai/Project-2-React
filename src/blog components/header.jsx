@@ -11,20 +11,20 @@ function header() {
             <nav>
                 <ul>
                     <li>
-                        <Link to="/">Home</Link>
+                        <Link to="/"><p>Home</p></Link>
                     </li>
                     <li>
-                        <Link to="/about">About</Link>
+                        <Link to="/about"><p>About</p></Link>
                     </li>
                     <li>
-                        <Link to="/contact">Contact</Link>
+                        <Link to="/contact"><p>Contact</p></Link>
                     </li>
                     <li>
-                        <Link to="/posts">Posts</Link>
+                        <Link to="/posts"><p>Posts</p></Link>
                     </li>
                     <li>
                         {/* <Link to="/login">Login</Link> */}
-                        {username ? <p onClick={logout}>Logout</p> : <Link to="/login">Login</Link>}
+                        {username ? <p onClick={logout}>Logout</p> : <Link to="/login"><p>Login</p></Link>}
                     </li>
                 </ul>
             </nav>

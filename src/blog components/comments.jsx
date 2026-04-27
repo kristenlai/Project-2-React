@@ -1,10 +1,12 @@
 import '../App.css';
 import React, { useState, useRef, useEffect } from 'react';
 import Onecomment from './Onecomment';
+import { useAuth } from './authorize/AuthContext';
 
 function comments() {
+  const {user} = useAuth();
   const [comment, setComment] = useState({
-    name: "",
+    name: user ? user.username : "",
     content: ""
   });
   const [commentList, setCommentList] = useState([]);
@@ -12,7 +14,7 @@ function comments() {
     e.preventDefault();
     setCommentList((prev) => [...prev, comment]);
     setComment({
-        name: "",
+        name: user ? user.username : "",
         content: ""
     });
   };
