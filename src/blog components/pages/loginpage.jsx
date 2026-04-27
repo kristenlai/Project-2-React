@@ -33,7 +33,7 @@ function loginpage() {
                 type='password'
                 value={userData.password} 
                 onChange={(e) => setUserData({...userData, password: e.target.value})} />
-                <button type='submit'>Submit</button>
+                <button type='submit' onClick={ console.log("Hello!") }>Submit</button>
             </form>
           </div>
         </div>

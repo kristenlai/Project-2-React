@@ -53,6 +53,15 @@ a {
   text-align: center;
 }
 
+.Home button {
+  background-color: #7f649d;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 .post {
   display: flex;
   flex-direction: column;
