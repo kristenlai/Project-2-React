@@ -26,3 +26,13 @@ function App() {
 }
 
 export default App; 
+
+// git add .
+// git commit -m "first commit"
+// git push origin main
+
+// git init 
+// git add 
+// git commit -m <branch name>
+// git remote add origin <remote_repository_URL>
+// git push -u origin <whatever branch name>
